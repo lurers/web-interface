@@ -1,0 +1,96 @@
+body, html{
+  margin: 0;
+}
+
+footer {
+  height: 3rem;
+  background-color: purple;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+}
+
+nav {
+  height: 3rem;
+  background-color: black;
+  width: 100%;
+}
+
+#username {
+  cursor: pointer;
+}
+
+.nav {
+  font-family: Arial;
+  font-weight: bolder;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.btn-more, .btn-more:focus {
+  text-align: center;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.btn-more:hover {
+  background: black;
+  color: #fff;
+}
+
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5px;
+}
+
+.card {
+  height: 12rem;
+  padding: 1rem;
+  background-color: violet;
+  border: solid;
+  border-color: black;
+  border-radius: 10px;
+
+
+}
+
+.hot {
+  color: red;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px black;
+  font-weight: bolder;
+}
+
+.warm {
+  color: green;
+  text-transform: lowercase;
+  text-shadow: 0 0 5px black;
+  font-weight: bold;
+}
+
+.cold {
+  color: blue;
+  text-transform: lowercase;
+  text-shadow: 0 0 5px white;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

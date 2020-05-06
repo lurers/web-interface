@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ibrahim Adel">
+  <meta name="viewport" content="
+  width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/graphql.js"></script>
+
+  <title>SMART HOME</title>
+</head>
+<body>
+  <nav class="nav">SMART HOME INTERFACE</nav>
+  <div id="content" class="cards">
+    <div class="card">
+      <h2>TEMPERATURE</h2>
+      <div id="temp" class="hot warm cold">
+      </div>
+    </div>
+    <div class="card">
+      <h2>USER</h2>
+      <div>
+        <h1 id="username" onclick="change_name()">[CLICK]</h1>
+      </div>
+    </div>
+    <div class="card off" id="lamp1" >
+      <h2>LIGHT</h2>
+      <div>
+        <h1 id="lamp_text1" class="btn-more" onclick="on_off()">off</h1>
+      </div>
+    </div>
+    <div class="card">
+      <h2>USD - RUB</h2>
+      <div>
+        <h1 id = "dollar"></h1>
+      </div>
+    </div>
+    <div class="card">
+      <h2 class="btn-more" onclick = "get_random_title()">Generate Random Anime</h2>
+      <div>
+        <h1 id = "anime">Anime Title (ignore console error)</h1> 
+      </div>
+    </div>
+    <div class="card">
+      <h2>Anime Picture</h2>
+      <div> 
+        <img src="" alt="" id="anime_image">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h3>COPYRIGHT 2020 Ibrahim El Saify [Web Exam]</h3>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
